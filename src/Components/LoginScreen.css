@@ -1,0 +1,240 @@
+.loginScreen{
+    position: relative;
+    height: 100vh;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/757ab38f-5d08-40bc-b3eb-eaba63ed8203/93c34f94-56c8-40a7-8b2e-b4aac6427977/GB-en-20210125-popsignuptwoweeks-perspective_alpha_website_medium.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.bggradiant{
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0,
+        rgba(0,0,0,0) 60%,
+        rgba(0,0,0,0.8) 100%
+    );
+}
+
+.loginBody{
+    
+    position: absolute;
+    top: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    padding: 25px;
+    left: 0;
+    right: 0;
+}
+
+.loginBody > h1 {
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+
+.loginBody > h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.loginBody > h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.logo{
+    /* position: fixed;
+    left:0;
+    top: 20px; */
+    width: 120px;
+    object-fit: conatin;
+    padding-left: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.signbtn{
+    /* position: fixed; */
+    /* right: 20px;
+    top: 20px; */
+    margin-right: 40px;
+    width: 100px;
+    height: 35px;
+    /* padding: 10px 20px; */
+    font-size: 1rem;
+    color:#fff ;
+    background-color: #e50914;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.loginScreenInput >form >input{
+    padding: 10px;
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 30%;
+    max-width: 700px;
+}
+
+.getstartbtn{
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.loginScreenInput{
+    margin: 20px;
+}
+
+.borderbottom{
+    height: 8px;
+    width: 100%;
+    background-color: #222;
+}
+
+.loginNav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    z-index: 1000;
+}
+
+.loginNavBg{
+    /* height: 8vh; */
+    background-color: #111;
+    
+
+}
+
+.navlang{
+    margin-right: 20px;
+    padding-right: 20px;
+    height: 35px;
+}
+
+@media only screen and (max-width:800px){
+    .loginScreenInput >form >input{
+        width: 50%;
+        height: 27px;
+    }
+    
+    .getstartbtn{
+        /* padding: 16px 20px; */
+        font-size: 0.9rem;
+        width: 150px;
+        
+    }
+    .logo{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .loginBody > h1 {
+        font-size: 2.8rem;
+    }
+    .loginBody > h2{
+        font-size: 1.7rem;;
+    }
+    
+    .loginBody > h3{
+        font-size: 1.1rem;
+    }
+    .logo{
+        width: 80px;
+        padding-left: 5px;
+    }
+    .signbtn{
+        margin-right: 30px;
+        width: 80px;
+        height: 35px;
+        font-size: 0.8rem;
+        
+    }
+    .navlang{
+        /* width: 100px; */
+        margin-right: 10px;
+        /* padding-right: 5px; */
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width:485px){
+    .loginBody > h1 {
+        font-size: 2.2rem;
+    }
+    .loginBody > h2{
+        font-size: 1.4rem;;
+    }
+    
+    .loginBody > h3{
+        font-size: 1rem;
+    }
+    .logo{
+        width: 70px;
+        padding-left: 5px;
+    }
+    .signbtn{
+        margin-right: 30px;
+        width: 60px;
+        height: 35px;
+        font-size: 0.8rem;
+        
+    }
+    .navlang{
+        margin-right: 5px;
+        /* padding-right: 5px; */
+        height: 35px;
+    }
+    /* .loginBody{
+        top: 10%;
+    } */
+}
+
+@media only screen and (max-width:430px){
+    .loginScreenInput >form >input{
+        display:none;
+    }
+    
+    .getstartbtn{
+        /* padding: 16px 20px; */
+        font-size: 0.9rem;
+        width: 100%;
+        /* margin-left: 11px; */
+        margin-top: 20px;
+    }
+    
+
+}
+
+@media only screen and (max-width:385px){
+    .loginBody > h1 {
+        font-size: 2rem;
+    }
+    .loginBody > h2{
+        font-size: 1.2rem;;
+    }
+    
+    .loginBody > h3{
+        font-size: 1rem;
+    }
+}

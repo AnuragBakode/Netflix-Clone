@@ -1,0 +1,135 @@
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    z-index: 10000000;
+}
+
+.nav_bg{
+    background-color: #111;
+}
+
+.nav_logo{
+    position: fixed;
+    left: 20px;
+    width: 80px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.nav_avatar{
+    position: fixed;
+    right: 20px;
+    width: 30px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.linksResponsive{
+    position: fixed;
+    left:120px ;
+}
+
+.nav_links{
+    display: flex;
+    
+    width: max-content;
+    
+}
+
+.nav_links > h3{
+    color: rgb(207, 207, 207);
+}
+.nav_links>h3:hover {
+    color: white;
+}
+.nav_links > h3{
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-right: 20px;
+    cursor: pointer;
+    user-select: none;
+    
+}
+.searchabar{
+    position: absolute;
+    right: 120px;
+}
+
+.searchInput > input{
+    height: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    background-color:rgba(0,0,0,0.5);
+}
+
+.fa-bars{
+    display: none;
+    color: rgb(207, 207, 207);
+}
+
+@media only screen and (max-width:650px){
+    .linksResponsive{
+        top: 25px;
+        left: 120px;
+    }
+    .nav_links{
+        display: none;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .MenuClicked{
+        display: block;
+    }
+
+
+    .nav_links >h3{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .fa-bars{
+        display: block;
+    }
+}
+
+@media only screen and (max-width : 500px){
+    .nav_logo{
+        width: 60px;
+    }
+    .nav_avatar{
+        width: 25px;
+    }
+    
+    .searchInput > input{
+        width: 135px;
+        height: 15px;
+        padding: 15px;
+    }
+
+    .searchabar{
+        right: 100px;
+    }
+    .linksResponsive{
+        left: 100px;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .searchInput > input{
+        width: 120px;
+    }
+}
+
+
+

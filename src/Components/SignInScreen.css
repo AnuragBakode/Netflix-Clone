@@ -1,0 +1,58 @@
+.signinScren{
+    max-width:300px ;
+    padding: 70px;
+    margin: auto;
+    background:rgba(0,0,0,0.85);
+}
+
+.signinScren >form {
+    display:grid ;
+    flex-direction: column;
+}
+
+.signinScren >form >input{
+    padding: 5px 15px;
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+    /* width: 30%; */
+    border: none;
+    margin-bottom: 14px;
+
+}
+
+.signinScren >form >button{
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #e50914;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.signinScren >form >h1{
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.signinScren >form >h4{
+    margin-top: 30px;
+    text-align: left;
+}
+
+.grayText{
+    color: gray;
+}
+
+.SignUpLink:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.signinScren >form> p {
+    margin-bottom: 30px;
+}
+

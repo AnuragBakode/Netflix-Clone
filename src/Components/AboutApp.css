@@ -1,0 +1,138 @@
+.aboutapp {
+    background-color: black;
+    color: white;
+}
+
+.content{
+    padding: 20px;
+}
+
+.EnjoyonyourTv{
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-top: 8px solid #222; */
+    
+}
+
+.content > h1{
+    font-size: 3.165rem;
+}
+
+.content >p{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    
+}
+
+.aboutapp img{
+    width: 500px;
+}
+
+.Downloadyourshows{
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.Watcheverywhere{
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.Createprofilesforchildren{
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+    padding: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+@media only screen and (max-width: 1080px){
+    .content > h1{
+        font-size: 2.5rem;
+    }
+    
+    .content >p{
+        font-size: 1rem;
+        margin-top: 20px;
+        
+    }
+    
+    .aboutapp img{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width : 850px){
+    .EnjoyonyourTv{
+        flex-direction: column;
+    }
+
+    .Downloadyourshows{
+        flex-direction: column;
+    }
+
+    .Watcheverywhere{
+        flex-direction: column;
+    }
+
+    .Createprofilesforchildren{
+        flex-direction: column;
+    }
+
+    .content > h1{
+        text-align: center;
+    }
+    
+    .content >p{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .content > h1{
+        font-size: 2rem;
+    }
+    
+    .content >p{
+        font-size: 1rem;
+        
+    }
+    
+    .aboutapp img{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .content > h1{
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width:300px){
+    .aboutapp img{
+        width: 200px;
+    }
+}

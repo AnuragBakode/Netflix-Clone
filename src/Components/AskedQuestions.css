@@ -1,0 +1,44 @@
+.askedQuestion{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.askedQuestion > h1{
+    
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
+
+.bottom{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.askedQuestion .loginScreenInput > form > input{
+    width: 70%;
+}
+
+.bottom > p {
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+@media only screen and (max-width:610px){
+    .askedQuestion .loginScreenInput > form > input{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .askedQuestion > h1{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:440px){
+  .askedQuestion .loginScreenInput > form > input{
+    display: none;
+}
+}

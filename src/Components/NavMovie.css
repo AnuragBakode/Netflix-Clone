@@ -1,0 +1,13 @@
+.navMovie{
+    padding: 10px;
+    width: 90%;
+    text-align: left;
+    color: white;
+    margin: auto;
+}
+
+@media only screen and (max-width:500px){
+    .navMovie > h1{
+        font-size: 1.5em;
+    }
+}

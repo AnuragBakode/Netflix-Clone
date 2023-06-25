@@ -1,0 +1,100 @@
+.movieScreenbanner{
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    color: white;
+
+   
+}
+
+.movieShow .name{
+    font-size: 4rem;
+    margin-bottom: 10px;
+    /* color: red; */
+}
+
+.movieShow{
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    z-index: 10000;
+}
+
+.banner_button:hover{
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+}
+
+.gradiant{
+    /* width: 100%;
+    height: 100vh; */
+    width: 100%;
+    z-index: 1;
+    height: 70vh;
+    background: rgba(0,0,0,0.1);
+    background-image: linear-gradient(
+        to top left,
+        rgba(0,0,0,0.8) 30%,
+        rgba(0,0,0,0) 70%,
+        rgba(0,0,0,0.8) 120%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contentmovieScreen{
+    position: absolute;
+}
+
+.banner_description{
+    font-size: 1.1rem;
+}
+
+.suggestion{
+    margin-top: 50px;
+}
+
+@media only screen and (max-width:800px){
+    .movieShow .name{
+        font-size: 2rem;
+    }
+    
+    .movieShow{
+        
+        bottom: 70px;
+        left: 30px;
+        
+    }
+    .movieScreenbanner{
+        height: 60vh;
+    }
+    .gradiant{
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width:650px){
+    
+    .movieShow .name{
+        font-size: 1.8rem;
+    }
+    .banner_description{
+        font-size: 0.8rem;
+    }
+}
+
+
+@media only screen and (max-width:500px){
+    .movieScreenbanner{
+        height: 50vh;
+    }
+    .gradiant{
+        height: 50vh;
+    }
+    .movieShow{
+        bottom: 15px;
+        left: 13px;
+    }
+}

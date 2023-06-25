@@ -1,0 +1,51 @@
+.show_poster{
+    /* width: 100%; */
+    max-height: 300px;
+    margin-right: 10px;
+    margin-top: 20px;
+    transition: transform 0.5s;
+}
+
+.show_poster:hover{
+    transform: scale(1.10);
+}
+.tvShowsPoster{
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tvShows{
+    padding: 10px;
+    width: 90%;
+    text-align: left;
+    color: white;
+    margin: auto;
+}
+
+@media only screen and (max-width:700px){
+    .show_poster{
+        max-height: 200px;
+
+    }
+}
+@media only screen and (max-width:500px){
+    .show_poster{
+        max-height: 150px;
+
+    }
+}
+@media only screen and (max-width:400px){
+    .show_poster{
+        max-height: 130px;
+
+    }
+
+    .tvShows > h1{
+        font-size: 1.5em;
+    }
+}
